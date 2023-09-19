@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quoc Bao</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <!--font awasome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--my css file-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay muted plays-inline loop>
+      <source src="./img/video.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <button class="call"><i class="fa-solid fa-phone"></i></button>
+      <div class="card move">
+        <div class="imgbox">
+          <img src="./img/anh.jpg" alt="" />
+        </div>
+        <div class="name-job">
+          <h3>Đinh Nho Quốc Bảo</h3>
+          <h5></h5>
+        </div>
+        <div class="skills">
+          <button class="btn-Follow">
+            <a href="https://www.tiktok.com/@quocbao24042004">Follow</a>
+          </button>
+          <button class="btn-Message">
+            <a href="https://www.facebook.com/profile.php?id=100050578881386">Message</a>
+          </button>
+        </div>
+      </div>
+      <div class="icons">
+      
+        <a href="https://www.youtube.com/channel/UCb3WjwYUjy-skcxvBeQ47uw">
+          <div class="icon">
+            <i class="fa-brands fa-youtube front"></i>
+            <i class="fa-brands fa-youtube back"></i>
+            <i class="fa-brands fa-youtube left"></i>
+            <i class="fa-brands fa-youtube right"></i>
+            <i class="fa-brands fa-youtube top"></i>
+            <i class="fa-brands fa-youtube bottom"></i>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100050578881386">
+          <div class="icon">
+            <i class="fa-brands fa-facebook-f front"></i>
+            <i class="fa-brands fa-facebook-f back"></i>
+            <i class="fa-brands fa-facebook-f left"></i>
+            <i class="fa-brands fa-facebook-f right"></i>
+            <i class="fa-brands fa-facebook-f top"></i>
+            <i class="fa-brands fa-facebook-f bottom"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var container = document.querySelector(".container");
+  var icons = document.querySelector(".icons");
+  var call = document.querySelector(".call");
+  var body = document.querySelector("body");
+  var card = document.querySelector(".card");
+  // body.addEventListener('onload',function(){
+  setTimeout(function () {
+    container.classList.add("move");
+  }, 1000);
+  // })
+  setTimeout(function () {
+    icons.style = "opacity: 0";
+    call.style = "opacity: 0";
+  }, 1000);
+  setTimeout(function () {
+    card.classList.remove("move");
+    icons.style = "opacity: 1";
+    call.style = "opacity: 1";
+  }, 1000);
+</script>
